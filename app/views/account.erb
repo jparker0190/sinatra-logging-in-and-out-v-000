@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
     <body id="page-top">
-      <%Helpers.is_logged_in?(session)%>
+      <%if Helpers.is_logged_in?(session) end %>
       <%=Helpers.current_user(session)%>
       <%=Helpers.curent_user(session).balance%>
       <h1>Welcome to FlatBank</h1>
