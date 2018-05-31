@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
     <body id="page-top">
-      <%if Helpers.is_logged_in?(session) end %>
+      <%if Helpers.is_logged_in?(session)%>
       <%=Helpers.current_user(session)%>
       <%=Helpers.curent_user(session).balance%>
+      <% end %>
       <h1>Welcome to FlatBank</h1>
              <h2>Welcome <%=@current_user%></h2>
          </body>
