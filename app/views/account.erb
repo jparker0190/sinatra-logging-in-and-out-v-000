@@ -9,6 +9,7 @@
       <%if Helpers.is_logged_in?(session)%>
       <%=Helpers.current_user(session)%>
       <%=Helpers.curent_user(session).balance%>
+      <a href='/logout'>Log Out</a>
       <% end %>
       <h1>Welcome to FlatBank</h1>
              <h2>Welcome <%=@current_user%></h2>
