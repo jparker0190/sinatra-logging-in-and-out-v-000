@@ -12,6 +12,7 @@
       <a href='/logout'>Log Out</a>
       <% end %>
       <h1>Welcome to FlatBank</h1>
-             <h2>Welcome <%=@current_user%></h2>
+             <h1>Welcome <%=@current_user.user%></h1>
+             <h3>Your Balance: <%=@current_user.balance%></h3>
          </body>
        </html>
